@@ -1,0 +1,49 @@
+h5 {
+  text-align: right;
+}
+
+select {
+  margin-bottom:10px;
+}
+
+.fa-plus-square-o {
+  color:red;
+}
+
+.header-nav {
+  padding:5px;
+  background-color: #464b4f;
+  color: white;
+}
+
+.btn-block {
+  color: #949699;
+}
+
+.btn-block:hover {
+  color:white;
+}
+
+.wbdv-close {
+  color: white;
+}
+
+.active {
+  background-color: #383c3f;
+  color: white;
+}
+
+.col-4 {
+  padding: 10px;
+  background-color: #373b3e;
+}
+
+.col-8 {
+
+}
+
+.list-group-item {
+  margin: 5px;
+  background-color: #4c5154;
+  color: white;
+}

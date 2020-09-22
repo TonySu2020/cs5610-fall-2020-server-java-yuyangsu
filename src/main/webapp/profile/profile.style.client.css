@@ -1,0 +1,23 @@
+/*h1 {*/
+/*    color: blue;*/
+/*    margin: 0px*/
+/*}*/
+/*div {*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*.background-color-red {*/
+/*    background-color: red;*/
+/*}*/
+
+/*.background-color-blue {*/
+/*    background-color: blue;*/
+/*}*/
+
+.alertFld {
+  background-color: #D7EEDC;
+  padding: .375rem .75rem;
+  color: rgba(37, 125, 27, 1);
+  font-weight: bold;
+  border-radius: .25rem;
+}

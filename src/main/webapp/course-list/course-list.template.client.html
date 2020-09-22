@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"/>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  <link href="course-list.style.client.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+  <i class="fa fa-plus-circle pull-right fa-2x wbdv-add-course-button wbdv-sticky-add-course-button wbdv-button wbdv-add-course"
+     aria-hidden="true"></i>
+  <h2 class="wbdv-sticky-header">
+    <i class="fa fa-bars wbdv-field wbdv-hamburger" aria-hidden="true"></i>
+    <label for="newCourseFld" class="wbdv-label wbdv-course-manager d-none d-sm-inline d-sm-none">Course Manager</label>
+    <input id="newCourseFld" class="wbdv-field wbdv-new-course" placeholder="New Course Title"/>
+    <i class="fa fa-plus-circle wbdv-add-course-button wbdv-button wbdv-add-course" aria-hidden="true"></i>
+  </h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th class="wbdv-header wbdv-title">Title</th>
+      <th class="wbdv-header wbdv-owner d-none d-none d-sm-table-cell">Owned by <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </th>
+      <th class="wbdv-header wbdv-last-modified d-none d-sm-table-cell">Last Modified</th>
+      <th>
+        <i class="fa fa-th wbdv-button wbdv-grid-layout" aria-hidden="true"></i>
+        <i class="fa fa-list wbdv-button wbdv-list-layout" aria-hidden="true"></i>
+        <i class="fa fa-sort-alpha-asc wbdv-header wbdv-sort" aria-hidden="true"></i>
+      </th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4" class="table-date">Yesterday</td>
+    </tr>
+
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4" class="table-date">Previous 7 Days</td>
+    </tr>
+
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr class="wbdv-row wbdv-course">
+      <td class="wbdv-row wbdv-title"><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+        CS5310
+      </td>
+      <td class="wbdv-row wbdv-owner d-none d-sm-table-cell">me</td>
+      <td class="wbdv-row wbdv-modified-date d-none d-sm-table-cell" >5:34 pm</td>
+      <td>
+        <i class="fa fa-2x fa-trash pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

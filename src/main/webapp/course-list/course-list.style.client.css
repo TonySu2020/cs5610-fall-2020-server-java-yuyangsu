@@ -1,0 +1,46 @@
+
+
+.wbdv-add-course-button {
+  color: red;
+}
+
+.wbdv-sticky-add-course-button {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 5em;
+}
+
+.wbdv-sticky-header {
+  position: fixed;
+  top: 0px;
+  background-color: #5086ef;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+  padding-left:10px;
+  color: white;
+}
+
+body {
+  padding-top: 90px;
+  background-color:  #eeeeee;
+}
+
+table {
+  background-color: white;
+}
+
+.table-date {
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+#newCourseFld {
+  background-color: #6b9af0;
+  color: #ebebeb;
+}
+
+
+
+
