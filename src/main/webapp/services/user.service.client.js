@@ -24,7 +24,7 @@ function AdminUserServiceClient() {
   }
 
   function findUserById(userId) {
-
+    return fetch(this.url + "/" + userId).then(response => response.json());
   }
 
   function updateUser(userId, user) {

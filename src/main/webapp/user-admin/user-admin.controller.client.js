@@ -73,9 +73,16 @@
   }
 
   function findUserById(userId) {
-    // userService.findUserById(userId).then(response => {
-    //   alert("Found: ", response)
-    // })
+
+    if (userId !== undefined) {
+      userService.findUserById(userId).then(response => {
+        console.log(response);
+        alert("The last selected user's username is: " + response.username);
+      });
+    } else {
+      alert("You haven't selected any user yet.");
+    }
+
   }
 
   function deleteUser(user) {
