@@ -24,6 +24,7 @@ function AdminUserServiceClient() {
   }
 
   function findUserById(userId) {
+
   }
 
   function updateUser(userId, user) {
