@@ -4,14 +4,16 @@ function AdminUserServiceClient() {
   this.findUserById = findUserById;
   this.deleteUser = deleteUser;
   this.updateUser = updateUser;
-  this.url = 'https://wbdv-generic-server.herokuapp.com/api/jannunzi/users';
+  this.url = 'https://wbdv-generic-server.herokuapp.com/api/yuyang/users';
   var self = this;
+
   function findAllUsers() {
-    return fetch('https://wbdv-generic-server.herokuapp.com/api/jannunzi/users')
+    return fetch(this.url)
     .then(response => response.json())
   }
+
   function createUser(user) {
-    return fetch('https://wbdv-generic-server.herokuapp.com/api/jannunzi/users', {
+    return fetch(this.url, {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
@@ -20,9 +22,12 @@ function AdminUserServiceClient() {
     })
     .then(response => response.json())
   }
-  function findUserById(userId) {  }
+
+  function findUserById(userId) {
+  }
+
   function updateUser(userId, user) {
-    return fetch(`https://wbdv-generic-server.herokuapp.com/api/jannunzi/users/${userId}`, {
+    return fetch(this.url + '/' + userId, {
       method: 'PUT',
       body: JSON.stringify(user),
       headers: {
@@ -30,8 +35,9 @@ function AdminUserServiceClient() {
       }
     })
   }
+
   function deleteUser(userId) {
-    return fetch('https://wbdv-generic-server.herokuapp.com/api/jannunzi/users/' + userId, {
+    return fetch(this.url + '/' + userId, {
       method: 'DELETE'
     })
   }
