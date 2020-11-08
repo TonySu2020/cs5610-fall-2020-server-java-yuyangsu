@@ -1,14 +1,20 @@
 package com.example.cs5610fall2020serverjavayuyangsu.models;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Widget implements Comparable<Widget> {
 
-  private String name;
-
+  @Id
   @JsonProperty("_id")
-  private String id;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private int id;
+
+  private String name;
 
   private String tid;
 
@@ -31,7 +37,8 @@ public class Widget implements Comparable<Widget> {
 
   }
 
-  public Widget(String name, String text, int size, String id, String tid, String type, int widgetOrder) {
+  public Widget(String name, String text, int size, int id, String tid, String type,
+      int widgetOrder) {
     this.name = name;
     this.id = id;
     this.tid = tid;
@@ -49,11 +56,11 @@ public class Widget implements Comparable<Widget> {
     this.name = name;
   }
 
-  public String getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(int id) {
     this.id = id;
   }
 
