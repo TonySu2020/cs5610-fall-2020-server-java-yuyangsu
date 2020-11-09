@@ -56,6 +56,7 @@ public class WidgetService {
       newWidget.setText(widget.getText());
       newWidget.setName(widget.getName());
       newWidget.setType(widget.getType());
+      newWidget.setOrderType(widget.getOrderType());
       newWidget.setWidgetOrder(widget.getWidgetOrder());
 
       widgetRepository.save(newWidget);

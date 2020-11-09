@@ -5,8 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="widgets")
 public class Widget implements Comparable<Widget> {
 
   @Id
@@ -26,6 +28,8 @@ public class Widget implements Comparable<Widget> {
 
   private int size;
 
+  private String orderType;
+
   //  private String url;
   //  private int width;
   //  private int height;
@@ -38,7 +42,7 @@ public class Widget implements Comparable<Widget> {
   }
 
   public Widget(String name, String text, int size, int id, String tid, String type,
-      int widgetOrder) {
+      int widgetOrder, String orderType) {
     this.name = name;
     this.id = id;
     this.tid = tid;
@@ -46,6 +50,7 @@ public class Widget implements Comparable<Widget> {
     this.widgetOrder = widgetOrder;
     this.size = size;
     this.text = text;
+    this.orderType = orderType;
   }
 
   public String getName() {
@@ -97,7 +102,6 @@ public class Widget implements Comparable<Widget> {
   }
 
   public int getSize() {
-
     return size;
   }
 
@@ -105,21 +109,17 @@ public class Widget implements Comparable<Widget> {
     this.size = size;
   }
 
+  public String getOrderType() {
+    return orderType;
+  }
+
+  public void setOrderType(String orderType) {
+    this.orderType = orderType;
+  }
+
   @Override
   public int compareTo(Widget widget) {
     return this.getWidgetOrder() - widget.getWidgetOrder();
   }
 
-  @Override
-  public String toString() {
-    return "Widget{" +
-        "name='" + name + '\'' +
-        ", id='" + id + '\'' +
-        ", tid='" + tid + '\'' +
-        ", type='" + type + '\'' +
-        ", widgetOrder=" + widgetOrder +
-        ", text='" + text + '\'' +
-        ", size=" + size +
-        '}';
-  }
 }
